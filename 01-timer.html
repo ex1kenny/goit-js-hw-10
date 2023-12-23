@@ -8,12 +8,35 @@
     <title>Page 2</title>
     <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-ec808ebb.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-7408eeaa.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-80d0dc0f.css">
     <link rel="stylesheet" href="/vanilla-app-template/assets/01-timer-1c9089f2.css">
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
     </section>
+    <input type="text" id="datetime-picker" />
+    <button type="button" data-start>Start</button>
+
+    <div class="timer">
+      <div class="field">
+        <span class="value" data-days>00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="field">
+        <span class="value" data-hours>00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="field">
+        <span class="value" data-minutes>00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="field">
+        <span class="value" data-seconds>00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
     
   </body>
 </html>

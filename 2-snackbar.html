@@ -8,6 +8,8 @@
     
     <script type="module" crossorigin src="/vanilla-app-template/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-ec808ebb.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-7408eeaa.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-80d0dc0f.css">
     <link rel="stylesheet" href="/vanilla-app-template/assets/styles-4bcb25d9.css">
   </head>
 
@@ -15,6 +17,26 @@
     <section>
       <a href="./index.html">Go to home</a>
     </section>
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number" name="delay" required />
+      </label>
+
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit">Create notification</button>
+    </form>
     
   </body>
 </html>
